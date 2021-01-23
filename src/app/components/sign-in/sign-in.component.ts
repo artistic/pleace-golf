@@ -1,0 +1,24 @@
+import { Component, OnInit } from '@angular/core';
+import { NgAuthService } from "../../ng-auth.service";
+import {Title} from "@angular/platform-browser";
+
+@Component({
+  selector: 'app-sign-in',
+  templateUrl: './sign-in.component.html',
+  styleUrls: ['./sign-in.component.css']
+})
+
+export class SignInComponent implements OnInit {
+
+  constructor(
+    public ngAuthService: NgAuthService,
+    private titleService:Title
+  ) { 
+
+  	this.titleService.setTitle("Pleace Golf : Sing In");
+
+  }
+
+  ngOnInit() { }
+
+}
