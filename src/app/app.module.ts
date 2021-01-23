@@ -37,6 +37,7 @@ import { RankingsComponent } from './components/rankings/rankings.component';
 import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
 import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
 import { AddTournamentComponent } from './components/add-tournament/add-tournament.component';
+import { TournamentsComponent } from './components/tournaments/tournaments.component';
 
 
 @NgModule({
@@ -62,7 +63,8 @@ import { AddTournamentComponent } from './components/add-tournament/add-tourname
     RankingsComponent,
     ForgotPasswordComponent,
     VerifyEmailComponent,
-    AddTournamentComponent
+    AddTournamentComponent,
+    TournamentsComponent
   ],
   imports: [
     BrowserModule,

@@ -59,3 +59,7 @@
   font-size: 22px;
   color: #eee;
 }
+
+.mylist {
+  border-bottom: 1px solid #ccc; 
+}

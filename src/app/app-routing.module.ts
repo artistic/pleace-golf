@@ -16,6 +16,7 @@ import { TermsComponent } from './components/terms/terms.component';
 import { PrivacyComponent } from './components/privacy/privacy.component';
 import { HelpComponent } from './components/help/help.component';
 
+import { TournamentsComponent } from './components/tournaments/tournaments.component';
 import { TournamentComponent } from './components/tournament/tournament.component';
 import { AddTournamentComponent } from './components/add-tournament/add-tournament.component';
 
@@ -44,6 +45,7 @@ const routes: Routes = [
   { path: 'privacy', component: PrivacyComponent, data: {title: 'Privacy Policy'} },
   { path: 'help', component: HelpComponent, data: {title: 'Help'} },
 
+  { path: 'tournaments', component: TournamentsComponent, data: {title: 'Tournaments'} },
   { path: 'tournament', component: TournamentComponent, data: {title: 'Tournament'} },
   { path: 'add-tournament', component: AddTournamentComponent, data: {title: 'Add New Tournament'} },
 
