@@ -60,6 +60,15 @@
   color: #eee;
 }
 
-.mylist {
-  border-bottom: 1px solid #ccc; 
+.success-created {
+  border: 1px solid #ccc; 
+  width: 90%;
+  margin : 20px;
+  padding: 30px;
 }
+
+.success-icon {
+  color: #2E4612;
+  font-size: 42px;
+}
+

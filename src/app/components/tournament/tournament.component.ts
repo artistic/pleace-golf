@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, OnChanges, Output, EventEmitter } from '@angular/core';
 import Tournament from 'src/app/models/tournament.model';
 import { TournamentsService } from 'src/app/services/tournaments.service';
+import { AngularFirestore } from '@angular/fire/firestore';
 
 @Component({
   selector: 'app-tournament',
@@ -18,7 +19,10 @@ export class TournamentComponent implements OnInit, OnChanges {
   };
   message = '';
 
-  constructor(private tournamentsService: TournamentsService) { }
+  constructor(
+    private tournamentsService: TournamentsService,
+    private firestore: AngularFirestore
+    ) { }
 
   ngOnInit(): void {
     this.message = '';
@@ -29,6 +33,8 @@ export class TournamentComponent implements OnInit, OnChanges {
     this.currentTournament = { ...this.tournament };
   }
 
+
+  
   updatePublished(status: boolean): void {
     if (this.currentTournament.id) {
       this.tournamentsService.update(this.currentTournament.id, { published: status })

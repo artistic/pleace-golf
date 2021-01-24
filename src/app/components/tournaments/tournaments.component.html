@@ -22,15 +22,11 @@
 											(click)="setActiveTutorial(tournament, i)"
 											>
 											{{ tournament.title }}
-
 											<span class="pull-right">
 												<img src="assets/img/flags/{{tournament.country}}.png" class="profile-flag-img-small" >
 											</span>
 										</li>
-
-
 									</ul>
-
 								</div>
 
 							</div>
@@ -49,28 +45,19 @@
 				<div class="s-plan-v1 g-bg-color--white g-padding-x-20--xs g-padding-y-30--xs">
 
 					<div class="row">
-						<div class="col-md-6 col-sm-6 col-xs-6"></div>
-						<div class="col-md-6 col-sm-6 col-xs-6">
-							<a routerLink="add-tournament" class="text-uppercase s-btn btn-block s-btn--xs s-btn--primary-bg g-radius--3 g-padding-x-40--xs g-margin-b-20--xs">
-								Create Tournament
-							</a>
-						</div>
-					</div>
-
-					<div class="row">
 						<div class="col-md-12 col-sm-12 col-xs-12">
-									<div *ngIf="currentTournament">
-										<app-tournament
-										(refreshList)="refreshList()"
-										[tournament]="currentTournament"
-										></app-tournament>
-									</div>
+							<div *ngIf="currentTournament">
+								<app-tournament
+								(refreshList)="refreshList()"
+								[tournament]="currentTournament"
+								></app-tournament>
+							</div>
 
-									<div *ngIf="!currentTournament">
-										<br />
-										<p>Please click on a Tutorial...</p>
-									</div>
-								</div>
+							<div *ngIf="!currentTournament">
+								<br />
+								<p>Please click on a Tutorial...</p>
+							</div>
+						</div>
 					</div>
 
 

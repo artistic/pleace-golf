@@ -14,7 +14,7 @@
 
 								<div class="submit-form">
 									<div *ngIf="!submitted">
-										<div class="row g-margin-b-10--xs g-margin-b-20--md">
+										<div class="row ">
 											<div class="col-sm-12">
 												<div class="input-group g-margin-b-10--xs">
 													<span class="input-group-btn">
@@ -33,36 +33,65 @@
 											</div>
 										</div>
 
-										<div class="form-group">
-											<label for="description">Description</label>
-											<input
-											class="form-control"
-											id="description"
-											required
-											[(ngModel)]="tournaments.description"
-											name="description"
-											/>
+										<div class="row ">
+											<div class="col-sm-12">
+												<div class="input-group g-margin-b-10--xs">
+													<span class="input-group-btn">
+														<i class="s-form-v4__icon ti-world"></i>
+													</span>
+													<input 
+													type="text" 
+													class="form-control s-form-v4__input" 
+													placeholder="Country" 
+													required
+													[(ngModel)]="tournaments.country"
+													id="country"
+													name="country"
+													/>
+												</div>
+											</div>
 										</div>
 
-										<div class="form-group">
-											<label for="score">Score</label>
-											<input
-											class="form-control"
-											id="score"
-											required
-											[(ngModel)]="tournaments.score"
-											name="score"
-											/>
+										<div class="row ">
+											<div class="col-sm-12">
+												<div class="input-group g-margin-b-10--xs">
+													<span class="input-group-btn">
+														<i class="s-form-v4__icon ti-comments"></i>
+													</span>
+													<input 
+													type="text" 
+													class="form-control s-form-v4__input" 
+													placeholder="Description" 
+													required
+													[(ngModel)]="tournaments.description"
+													id="description"
+													name="description"
+													/>
+												</div>
+											</div>
 										</div>
 
-										<button (click)="saveTournament()" class="btn btn-success">Submit</button>
+										<button (click)="saveTournament()" type="button" class="text-uppercase s-btn s-btn--sm btn-block s-btn--primary-bg g-radius--3 g-padding-x-50--xs">Create Tournament</button>
 									</div>
 
 									<div *ngIf="submitted">
-										<h4>You submitted successfully!</h4>
-										<button class="btn btn-success" (click)="newTutorial()">Add</button>
+										
+
+										<div class="row">
+											<div class="col-md-12 col-sm-12 col-xs-12 success-created g-text-center--xs">
+
+												<div class="row g-padding-y-50--xs">
+													<div class="col-md-12 col-sm-12 col-xs-12">
+														<i class="success-icon ti-check-box"></i>
+													</div>
+												</div>
+												<h4 class="g-font-size-18--xs g-color--primary g-margin-b-30--xs">You submitted successfully!</h4>
+												<button class="text-uppercase s-btn s-btn--sm btn-block s-btn--primary-bg g-radius--3 g-padding-x-50--xs" (click)="newTutorial()">Create New Tournament</button>
+											</div>
+										</div>
 									</div>
 								</div>
+
 
 							</div>
 						</div>

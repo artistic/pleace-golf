@@ -9,6 +9,7 @@ export class TournamentsService {
 
   private dbPath = '/tournaments';
 
+
   tournamentsRef: AngularFirestoreCollection<Tournament>;
 
   constructor(private db: AngularFirestore) {

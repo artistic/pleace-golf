@@ -14,6 +14,8 @@ import { NgAuthService } from "./ng-auth.service";
 import { NgxPaginationModule } from 'ngx-pagination';
 import { HttpClientModule } from '@angular/common/http';
 
+import { ReactiveFormsModule } from '@angular/forms';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AddTutorialComponent } from './components/add-tutorial/add-tutorial.component';
@@ -38,6 +40,7 @@ import { ForgotPasswordComponent } from './components/forgot-password/forgot-pas
 import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
 import { AddTournamentComponent } from './components/add-tournament/add-tournament.component';
 import { TournamentsComponent } from './components/tournaments/tournaments.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -68,13 +71,15 @@ import { TournamentsComponent } from './components/tournaments/tournaments.compo
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
+    ReactiveFormsModule, 
     AppRoutingModule,
     HttpClientModule,
     NgxPaginationModule,
     FormsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule, // for firestore
-    AngularFireAuthModule
+    AngularFireAuthModule, BrowserAnimationsModule
   ],
   providers: [
       NgAuthService,

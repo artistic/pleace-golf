@@ -21,39 +21,61 @@
         <link href="assets/vendor/swiper/swiper.min.css" rel="stylesheet" type="text/css"/>
         <link href="assets/css/global/global.css" rel="stylesheet" type="text/css"/>
         <link href="assets/css/mine.css" rel="stylesheet" type="text/css"/>
+
+        <link rel="stylesheet" type="text/css" href="assets/dist/css/hotel-datepicker.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+
+
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
+<body class="mat-typography">
 	<app-root></app-root>
 
 	<!--========== JAVASCRIPTS (Load javascripts at bottom, this will reduce page load time) ==========-->
-        <!-- Vendor -->
-        <script type="text/javascript" src="assets/vendor/jquery.min.js"></script>
-        <script type="text/javascript" src="assets/vendor/jquery.migrate.min.js"></script>
-        <script type="text/javascript" src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="assets/vendor/jquery.smooth-scroll.min.js"></script>
-        <script type="text/javascript" src="assets/vendor/jquery.back-to-top.min.js"></script>
-        <script type="text/javascript" src="assets/vendor/scrollbar/jquery.scrollbar.min.js"></script>
-        <script type="text/javascript" src="assets/vendor/swiper/swiper.jquery.min.js"></script>
-        <script type="text/javascript" src="assets/vendor/masonry/jquery.masonry.pkgd.min.js"></script>
-        <script type="text/javascript" src="assets/vendor/masonry/imagesloaded.pkgd.min.js"></script>
-        <script type="text/javascript" src="assets/vendor/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
-        <script type="text/javascript" src="assets/vendor/jquery.equal-height.min.js"></script>
-        <script type="text/javascript" src="assets/vendor/jquery.parallax.min.js"></script>
-        <script type="text/javascript" src="assets/vendor/jquery.wow.min.js"></script>
+    <!-- Vendor -->
+    <script type="text/javascript" src="assets/vendor/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/vendor/jquery.migrate.min.js"></script>
+    <script type="text/javascript" src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/vendor/jquery.smooth-scroll.min.js"></script>
+    <script type="text/javascript" src="assets/vendor/jquery.back-to-top.min.js"></script>
+    <script type="text/javascript" src="assets/vendor/scrollbar/jquery.scrollbar.min.js"></script>
+    <script type="text/javascript" src="assets/vendor/vidbg.min.js"></script>
+    <script type="text/javascript" src="assets/vendor/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+    <script type="text/javascript" src="assets/vendor/waypoint.min.js"></script>
+    <script type="text/javascript" src="assets/vendor/counterup.min.js"></script>
+    <script type="text/javascript" src="assets/vendor/swiper/swiper.jquery.min.js"></script>
+    <script type="text/javascript" src="assets/vendor/masonry/jquery.masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="assets/vendor/masonry/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="assets/vendor/jquery.equal-height.min.js"></script>
+    <script type="text/javascript" src="assets/vendor/jquery.parallax.min.js"></script>
+    <script type="text/javascript" src="assets/vendor/jquery.wow.min.js"></script>
 
-        <!-- General Components and Settings -->
-        <script type="text/javascript" src="assets/js/global.min.js"></script>
-        <script type="text/javascript" src="assets/js/components/header-sticky.min.js"></script>
-        <script type="text/javascript" src="assets/js/components/scrollbar.min.js"></script>
-        <script type="text/javascript" src="assets/js/components/swiper.min.js"></script>
-        <script type="text/javascript" src="assets/js/components/portfolio-3-col.min.js"></script>
-        <script type="text/javascript" src="assets/js/components/masonry.min.js"></script>
-        <script type="text/javascript" src="assets/js/components/equal-height.min.js"></script>
-        <script type="text/javascript" src="assets/js/components/parallax.min.js"></script>
-        <script type="text/javascript" src="assets/js/components/wow.min.js"></script>
-        <script type="text/javascript" src="assets/js/components/faq.min.js"></script>
-        <!--========== END JAVASCRIPTS ==========-->
+    <!-- General Components and Settings -->
+    <script type="text/javascript" src="assets/js/global.min.js"></script>
+    <script type="text/javascript" src="assets/js/components/header-sticky.min.js"></script>
+    <script type="text/javascript" src="assets/js/components/scrollbar.min.js"></script>
+    <script type="text/javascript" src="assets/js/components/swiper.min.js"></script>
+    <script type="text/javascript" src="assets/js/components/masonry.min.js"></script>
+    <script type="text/javascript" src="assets/js/components/equal-height.min.js"></script>
+    <script type="text/javascript" src="assets/js/components/parallax.js"></script>
+    <script type="text/javascript" src="assets/js/components/wow.min.js"></script>
+    <script type="text/javascript" src="assets/js/cookie.js"></script>
+    <script type="text/javascript" src="assets/js/number.js"></script>
+    <!--========== END JAVASCRIPTS ==========-->
+
+        <script type="text/javascript" src="assets/fecha/dist/fecha.min.js"></script>
+    <script type="text/javascript" src="assets/dist/js/hotel-datepicker.js"></script>
+
+    <script type="text/javascript">
+        (function() {
+         
+
+            var demo2 = new HotelDatepicker(document.querySelector('#demo2-input-parent input'));
+
+        })();
+    </script>
 
 </body>
 </html>
